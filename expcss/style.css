@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;700;900&display=swap");
+header {
+  min-height: 60px;
+  background-color: white;
+  flex-direction: row;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logotipo {
+  display: flex;
+  align-items: center;
+}
+header .logotipo img {
+  height: 60px;
+  margin-right: 20px;
+}
+header .langs {
+  display: flex;
+  align-items: center;
+  color: black;
+  gap: 30px;
+  text-transform: uppercase;
+  font-family: "Noto Sans";
+  font-weight: 600;
+  font-size: 14px;
+  padding-right: 20px;
+}
+header a {
+  text-decoration: none;
+  font-family: "Noto Sans";
+  color: black;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header a:active {
+  color: rgb(241, 129, 0);
+}
+
+.menu__prin {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+.menu__prin .inicio {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  margin: auto 0;
+}
+.menu__prin .inicio nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.menu__prin .inicio nav > ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+.menu__prin .inicio nav > ul > li {
+  margin: 0;
+}
+.menu__prin .inicio nav > ul > li > a {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Sans";
+  font-size: medium;
+  font-weight: bold;
+  justify-self: flex-end;
+  width: auto;
+  height: 100%;
+  color: white;
+  padding: 0 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+section .animate {
+  transition: 1s;
+}
+section.first__section .imagen__inicio {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+section.first__section .imagen__inicio img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.otra__section .imagen__logoenha {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin: 0;
+  text-align: center;
+  transition: transform 2s ease, padding-top 2s ease;
+  transform: translateX(-100%);
+}
+.otra__section.showanimate .imagen__logoenha {
+  transform: translateX(0);
+}
+.otra__section:hover .imagen__logoenha {
+  transform: scale(1.05);
+  padding-top: 100px;
+}
+
+.seco__section .Textos__parra {
+  display: flex;
+  opacity: 1;
+}
+.seco__section .Textos__parra h2 {
+  color: gray;
+}
+.seco__section .Textos__parra p {
+  color: black;
+  font-size: 46px;
+  font-weight: 700;
+}
+.seco__section .primer__texto {
+  background-color: white;
+  text-transform: uppercase;
+  padding-right: 400px;
+  padding-left: 70px;
+  text-align: start;
+  display: block;
+  white-space: nowrap;
+  word-break: normal;
+}
+.seco__section .segun__text {
+  background-color: white;
+  text-transform: uppercase;
+  padding-right: 90px;
+}
+
+.third__section .descripcion {
+  padding: 70px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+.third__section .descripcion:hover {
+  transform: scale(1.05);
+}
+
+.four__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: black;
+}
+.four__section .img__miembros {
+  display: flex;
+  padding: 150px 50px 0;
+  gap: 40px;
+}
+.four__section .img__miembros img {
+  width: 290px;
+  height: 500px;
+  object-fit: cover;
+  max-width: 400px;
+  transition: transform 2s;
+}
+.four__section .img__miembros img:hover {
+  transform: scale(1.1);
+}
+.four__section .img__miembros .miembro {
+  text-align: start;
+}
+.four__section .img__miembros .miembro:hover .info__miembro {
+  transform: translateX(130px) translateY(-50px) scale(1.1);
+}
+.four__section .img__miembros .imagen-abajo {
+  margin-top: 80px;
+}
+.four__section .info__miembro {
+  bottom: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(109, 109, 109, 0.8);
+  padding: 10px 25px 10px 50px;
+  font-size: medium;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: start;
+  position: relative;
+  transition: transform 0.2s ease;
+  transform: translateX(100px) translateY(-20px);
+}
+.four__section .info__miembro h2, .four__section .info__miembro p {
+  margin: 0;
+  font-size: large;
+}
+.four__section .info__miembro h2 {
+  font-size: 30px;
+}
+
+.five__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: black;
+}
+.five__section .img__miembros {
+  display: flex;
+  padding: 100px 50px;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+.five__section .img__miembros img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  max-width: 400px;
+  transition: transform 2s;
+}
+.five__section .img__miembros img:hover {
+  transform: scale(1.1);
+}
+.five__section .img__miembros .imagen-abajo {
+  margin-top: 80px;
+}
+.five__section .info__miembro {
+  bottom: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(109, 109, 109, 0.8);
+  padding: 10px 25px 10px 50px;
+  font-size: medium;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: start;
+  position: relative;
+  transition: transform 0.2s ease;
+  transform: translateX(130px) translateY(-40px);
+}
+.five__section .info__miembro h2, .five__section .info__miembro p {
+  margin: 0;
+  font-size: large;
+}
+.five__section .info__miembro h2 {
+  font-size: 30px;
+}
+.five__section .miembro:hover .info__miembro {
+  transform: translateX(130px) translateY(-50px) scale(1.1);
+}
+
+.redes {
+  display: inline-block;
+}
+.redes img {
+  width: 45px;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: rgb(189, 189, 189);
+  width: 100%;
+}
+footer .last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 45px;
+  padding-left: 65px;
+  text-align: center;
+}
+footer .last p, footer .last h2 {
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: x-small;
+  margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  nav.idio,
+  .first__section,
+  .seco__section,
+  .third__section,
+  .four__section,
+  .five__section,
+  .last {
+    flex-direction: column;
+  }
+}
+html, body {
+  font-family: "Noto Sans";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=style.css.map */

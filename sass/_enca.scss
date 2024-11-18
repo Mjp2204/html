@@ -1,0 +1,87 @@
+@use '../sass/variables' as variables;
+@use '../sass/mixin' as mixin;
+header{
+    position: fixed;
+    top: 0;
+    min-height: 60px;
+    background-color: variables.$back-color;
+    flex-direction: row;
+    padding: 5px;
+    @include mixin.crear_flex(space-between);
+    z-index: 1000;
+
+    .logotipo{
+        @include mixin.image_flex;
+        img{
+            height: 60px;
+            margin-right: 20px;
+        }
+    }
+
+    .langs{
+        @include mixin.image_flex;
+        color: variables.$other-color;
+        gap: 30px;
+        text-transform: uppercase;
+        font-family: variables.$fuente_prin;
+        font-weight: 600;
+        font-size: 14px;
+        padding-right: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        font-family: variables.$fuente_prin;
+        color: variables.$other-color;
+        &:hover{
+            text-decoration: underline;
+        }
+        &:active{
+            color: variables.$sub-color;
+        }
+    }
+}
+
+//OTRO HEADER
+.menu__prin {
+    width: 100%;
+    height: 60px;
+    background-color: variables.$other-color;
+    padding: 0;
+    margin: 0;
+
+    .inicio {
+        max-width: 1200px;
+        @include mixin.crear_flex(flex-end);
+        height: 100%;
+        margin: auto 0;
+
+        nav {
+            @include mixin.image_flex;
+            @include mixin.orga;
+
+            > ul {
+                @include mixin.orga;
+                @include mixin.crear_flex(flex-end);
+                list-style: none;
+                > li {
+                    margin: 0;
+
+                    > a {
+                        @include mixin.image_flex;
+                        font-family: variables.$fuente_prin;
+                        font-size: medium;
+                        font-weight: bold;
+                        justify-self: flex-end;
+                        width: auto;
+                        height: 100%;
+                        color: variables.$back-color;
+                        padding: 0 20px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

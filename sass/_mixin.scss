@@ -1,0 +1,40 @@
+@use 'variables';
+@mixin crear_flex($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin image_flex{
+    display: flex;
+    align-items: center;
+}
+
+@mixin orga{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+@mixin info_mi{
+    bottom: 0;
+    right: 0;
+    color: variables.$back-color;
+    text-transform: uppercase;
+    background-color: variables.$box-color;
+    padding: 10px 25px 10px 50px;
+    font-size: medium;
+    white-space: nowrap;
+}
+
+@mixin otra{
+    display: inline-block;
+    text-align: start;
+    position: relative;
+}
+
+@mixin image{
+    height: 500px;
+    object-fit: cover;
+    max-width: 400px;
+}

@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;700;900&display=swap');
+
+/*HEADER SUPERIOR*/
+html, body{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    min-height: 60px;
+    flex-direction: row; 
+    background-color: white;
+    padding: 5px;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+}
+
+.logotipo img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.langs{
+    display: flex;
+    align-items: center; 
+    color: black;
+    gap: 30px;
+    text-transform: uppercase;
+    font-family: Noto Sans;
+    font-weight: 600;
+    font-size: 14px;
+    padding-right: 20px;
+}
+a:hover{
+    text-decoration: underline;
+}
+a.active{
+    color: rgb(241, 129, 0);
+}
+
+/*HEADER INFERIOR*/
+.menu__prin{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.inicio{
+    max-width: 1200px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    margin: auto 0;
+}
+
+nav{
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+nav > ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav > ul > li{
+    margin: 0;
+}
+
+nav > ul > li > a{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    justify-self: flex-end;
+    width: auto;
+    height: 100%;
+    color: white;
+    padding: 0 20px;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+section{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+section .animate{
+    transition: 1s;
+}
+
+.first__section .imagen__inicio{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.first__section .imagen__inicio img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.otra__section .imagen__logoenha {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: 0;
+    text-align: center;
+    transition: transform 2s ease, padding-top 2s ease;
+    transform: translateX(-100%);
+}
+
+.otra__section.showanimate .imagen__logoenha {
+    transform: translateX(0);
+}
+
+.otra__section:hover .imagen__logoenha {
+    transform: scale(1.05);
+    padding-top: 100px;
+}
+
+.seco__section .Textos__parra{
+    display: flex; 
+    opacity: 1;
+}
+
+.seco__section .primer__texto{
+    background-color: white;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    padding-right: 400px;
+    padding-left: 70px;
+    text-align: start;
+    display: block;
+    white-space: nowrap;
+    word-break: normal;
+}
+
+.seco__section .Textos__parra h2{
+    color: gray;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.seco__section .Textos__parra p{
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.seco__section .segun__text{
+    background-color: white;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    padding-right: 90px;
+}
+
+.third__section .descripcion{
+    padding: 70px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: flex-start;
+}
+.four__section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.four__section .img__miembros{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 150px;
+    gap: 40px;
+}
+.four__section .img__miembros img{
+    width: 290px;
+    height: 500px;
+    object-fit: cover;
+    transition: 2s;
+}
+.four__section .img__miembros .miembro{
+    text-align: start;
+}
+.four__section .img__miembros img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.four__section .img__miembros .imagen-abajo{
+    margin-top: 80px;
+}
+.four__section .info__miembro {
+    bottom: 0; 
+    right: 0; 
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(109, 109, 109, 0.8); 
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-size: medium;
+    white-space: nowrap;
+    text-align: start;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.2s ease;
+    transform: translateX(100px);
+    transform: translateY(-20px);
+}
+.four__section .info__miembro h2, .four__section .info__miembro p {
+    margin: 0;
+    font-size: large; 
+}
+.four__section .info__miembro h2, .four__section .info__miembro h2 {
+    margin: 0;
+    font-size: 30px; 
+}
+.four__section .img__miembros img{
+    max-width: 400px;
+}
+.four__section .miembro:hover .info__miembro {
+    transform: scale(1.1); 
+}
+.four__section .miembro:hover .info__miembro {
+    transform: translateX(130px) translateY(-50px) scale(1.1); 
+}
+.five__section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.five__section .img__miembros{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+.five__section .img__miembros img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    transition: 2s;
+}
+.five__section .img__miembros .imagen-abajo{
+    margin-top: 80px;
+}
+
+.five__section .img__miembros img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.five__section .info__miembro {
+    bottom: 0; 
+    right: 0; 
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(109, 109, 109, 0.8); 
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    font-size: medium;
+    white-space: nowrap;
+    text-align: start;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.2s ease;
+    transform: translateX(130px);
+    transform: translateY(-40px);
+}
+.five__section .info__miembro h2, .five__section .info__miembro p {
+    margin: 0;
+    font-size: large; 
+}
+.five__section .info__miembro h2, .five__section .info__miembro h2 {
+    margin: 0;
+    font-size: 30px; 
+}
+.five__section .img__miembros img{
+    max-width: 400px;
+}
+.five__section .miembro:hover .info__miembro {
+    transform: translateX(130px) translateY(-50px) scale(1.1); 
+}
+.redes {
+    display: inline-block;
+}
+
+.redes img {
+    width: 45px;
+    padding: 15px;
+    border-radius: 100%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    background-color: rgb(189, 189, 189); 
+}
+
+.last {
+    display: flex;
+    padding-top: 45px;
+    padding-left: 65px;
+}
+
+.last p, .last h2 {
+    font-family: Noto Sans;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: small;
+    margin-left: 20px;
+}
+
+.last img {
+    height: 50px;
+    width: 170px;
+}
+
+@media (max-width: 768px) {
+    nav.idio, .first__section,
+    .seco__section, .third__section,
+    .four__section, .five__section
+    .last {
+        flex-direction: column;
+    }
+}
